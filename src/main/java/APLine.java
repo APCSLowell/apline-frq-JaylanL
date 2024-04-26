@@ -12,6 +12,10 @@ private int a, b, c;
   }
   public boolean isOnline(int x,int y)
   {
-    return a*x + b*y+c ==0;
+    if( a*x + b*y　+c ==0){
+      return true;
+    }else {
+      return false;
+    }
   }
 }
