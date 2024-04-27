@@ -1,17 +1,20 @@
 public class APLine
 {
-private int a, b, c;
-  public APLine(int a1,int b1, int c1){
-    a=a1;
-    b=b1;
-    c=c1;
-  }
-  public double getSlope()
-  {
-    return -(double)a/b;
-  }
-  public boolean isOnline(int x,int y)
-  {
-    return (a*x + b*y　+c) ==0;
-  }
+  /* your code here */
+  private int a, b, c;
+public APLine(int a, int b, int c)
+{
+  this.a = a;
+  this.b = b;
+  this.c = c;
+}
+public double getSlope()
+{
+  return (- (this.a /(double) this.b));
+}
+public boolean isOnLine(int x, int y)
+{
+  return (0 == (this.a*x) + (this.b*y) + this.c);
+}
+
 }
